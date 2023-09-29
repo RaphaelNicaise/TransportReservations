@@ -58,5 +58,6 @@ CREATE SCHEMA IF NOT EXISTS Nicaise_TransportReservations;
         FOREIGN KEY (driver_id) REFERENCES Drivers (driver_id)
     );
     
+    
     # REVIEW TABLE
     
