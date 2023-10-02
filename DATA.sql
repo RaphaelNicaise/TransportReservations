@@ -59,9 +59,9 @@ INSERT INTO Vehicles (vehicle_type, plate, capacity, price_hour)
 VALUES
 			('Minivan', 'AB123CD', 7, 20.50),
 			('Minivan', 'EF456GH', 7, 20.50),
-			('Minibus', 'IJ789KL', 15, 30.75),
-			('Minibus', 'MN012OP', 15, 30.75),
-			('Minibus', 'QR345ST', 15, 30.75),
+			('Minibus', 'IJ789KL', 15, 20.50),
+			('Minibus', 'MN012OP', 15, 20.50),
+			('Minibus', 'QR345ST', 15, 20.50),
 			('Limousine', 'UV678WX', 4, 50.00),
 			('Limousine', 'YZ901ZA', 4, 50.00),
 			('Limousine', 'BC234CD', 4, 50.00),

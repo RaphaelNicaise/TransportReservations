@@ -26,7 +26,7 @@ CREATE SCHEMA IF NOT EXISTS Nicaise_TransportReservations;
     
 	CREATE TABLE Vehicles (
 		vehicle_id INT AUTO_INCREMENT NOT NULL,
-        vehicle_type VARCHAR(255) NOT NULL,
+        vehicle_type ENUM('Limousine','Minibus','Minivan') NOT NULL,
         plate CHAR(10) NOT NULL,
         capacity INT NOT NULL,
         price_hour DECIMAL(4,2) NOT NULL DEFAULT 0,
@@ -37,7 +37,8 @@ CREATE SCHEMA IF NOT EXISTS Nicaise_TransportReservations;
 		route_id INT AUTO_INCREMENT NOT NULL,
         direction VARCHAR(255) NOT NULL,
         hours TIME NOT NULL,
-        reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        reservation_date DATE DEFAULT NOW(),
+        reservation_hour time DEFAULT NOW(),
         description VARCHAR(255) DEFAULT NULL,
         PRIMARY KEY(route_id)
     );
