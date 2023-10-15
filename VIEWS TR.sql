@@ -1,6 +1,6 @@
 CREATE OR REPLACE VIEW reservationAllInfo AS (
 	SELECT re.reservation_id,ve.vehicle_type,(ve.price_hour*ro.hours) AS Price,
-	concat(ro.reservation_date,' ',ro.reservation_hour) as DATETIME,re.passengers,ve.plate,us.user_name 
+	ro.reservation_date,re.passengers,ve.plate,us.user_name 
     AS Consumer,us.personalID AS Consumer_ID,us.email AS email,
     us.phone AS Phone,dr.driver_name AS DriverName,
     dr.personalID AS DriverID,dr.license_id AS LicenseID,re.res_status AS Status FROM reservations re
